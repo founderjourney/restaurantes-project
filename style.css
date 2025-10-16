@@ -1,0 +1,1579 @@
+/* Variables CSS - Paleta Restaurante Ultra Moderna */
+:root {
+    --primary-color: #FF6B6B;        /* Coral Vibrante - Pasión Culinaria */
+    --primary-dark: #EE5A52;
+    --secondary-color: #4ECDC4;      /* Turquesa Fresco - Frescura */
+    --accent-color: #45B7D1;         /* Azul Cielo - Elegancia */
+    --warning-color: #FFE66D;        /* Amarillo Brillante - Energía */
+    --success-color: #96CEB4;        /* Verde Menta - Armonía */
+    --background: #0A0A0A;           /* Negro Profundo Ultra Moderno */
+    --surface: #1A1A1A;
+    --surface-light: #2A2A2A;
+    --surface-glass: rgba(255, 255, 255, 0.05);
+    --text-primary: #FFFFFF;
+    --text-secondary: #E8E8E8;
+    --text-muted: #B0B0B0;
+    --border: rgba(255, 255, 255, 0.1);
+    --border-bright: rgba(255, 255, 255, 0.2);
+
+    /* Gradientes Ultra Modernos */
+    --gradient-primary: linear-gradient(135deg, #FF6B6B 0%, #4ECDC4 50%, #45B7D1 100%);
+    --gradient-secondary: linear-gradient(135deg, #4ECDC4 0%, #96CEB4 100%);
+    --gradient-accent: linear-gradient(135deg, #FFE66D 0%, #FF6B6B 100%);
+    --gradient-glass: linear-gradient(135deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.05) 100%);
+    --gradient-mesh: radial-gradient(circle at 30% 40%, rgba(255, 107, 107, 0.3) 0%, transparent 50%),
+                     radial-gradient(circle at 80% 10%, rgba(78, 205, 196, 0.3) 0%, transparent 50%),
+                     radial-gradient(circle at 40% 80%, rgba(69, 183, 209, 0.2) 0%, transparent 50%);
+
+    /* Sombras Ultra Modernas */
+    --shadow-primary: 0 20px 40px rgba(255, 107, 107, 0.4);
+    --shadow-secondary: 0 20px 40px rgba(78, 205, 196, 0.3);
+    --shadow-accent: 0 20px 40px rgba(69, 183, 209, 0.3);
+    --shadow-glass: 0 8px 32px rgba(0, 0, 0, 0.37);
+    --shadow-glow: 0 0 20px rgba(255, 107, 107, 0.3);
+    --shadow-float: 0 30px 60px rgba(0, 0, 0, 0.5);
+
+    /* Efectos Especiales */
+    --blur-glass: blur(10px);
+    --blur-backdrop: blur(16px);
+}
+
+/* Reset y base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background: var(--background);
+    color: var(--text-primary);
+    line-height: 1.6;
+    min-height: 100vh;
+    background-image: var(--gradient-mesh);
+    background-attachment: fixed;
+    overflow-x: hidden;
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:
+        radial-gradient(circle at 20% 50%, rgba(255, 107, 107, 0.1) 0%, transparent 60%),
+        radial-gradient(circle at 80% 20%, rgba(78, 205, 196, 0.15) 0%, transparent 60%),
+        radial-gradient(circle at 40% 80%, rgba(69, 183, 209, 0.1) 0%, transparent 60%);
+    pointer-events: none;
+    z-index: -1;
+}
+
+.container {
+    max-width: 480px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    position: relative;
+}
+
+/* Header del Restaurante - Ultra Moderno */
+.restaurant-header {
+    text-align: center;
+    margin-bottom: 3rem;
+    padding: 3rem 2rem;
+    background: var(--surface-glass);
+    border-radius: 24px;
+    backdrop-filter: var(--blur-backdrop);
+    -webkit-backdrop-filter: var(--blur-backdrop);
+    box-shadow: var(--shadow-glass);
+    border: 1px solid var(--border-bright);
+    position: relative;
+    overflow: hidden;
+    animation: fadeInUp 0.8s ease-out;
+}
+
+.restaurant-header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: var(--gradient-glass);
+    opacity: 0.3;
+    z-index: -1;
+}
+
+.restaurant-header::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: conic-gradient(from 0deg, transparent, rgba(255, 107, 107, 0.1), transparent, rgba(78, 205, 196, 0.1), transparent);
+    animation: rotate 20s linear infinite;
+    z-index: -1;
+}
+
+.restaurant-logo {
+    margin-bottom: 1.5rem;
+    position: relative;
+}
+
+.logo-emoji {
+    font-size: 5rem;
+    filter: drop-shadow(0 8px 16px rgba(255, 107, 107, 0.3));
+    animation: float 3s ease-in-out infinite;
+    display: inline-block;
+}
+
+.restaurant-name {
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    letter-spacing: -0.02em;
+    line-height: 1.1;
+    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    animation: glow 2s ease-in-out infinite alternate;
+}
+
+.restaurant-bio {
+    font-size: 1.1rem;
+    color: var(--text-secondary);
+    margin-bottom: 1rem;
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+.restaurant-tagline {
+    font-size: 1rem;
+    color: var(--text-muted);
+    font-style: italic;
+    font-weight: 300;
+    opacity: 0.8;
+}
+
+/* Sección de Menú Rápido */
+.quick-menu-section {
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background: rgba(42, 36, 31, 0.6);
+    border-radius: 15px;
+    border: 1px solid var(--border);
+}
+
+.quick-menu-section h3 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+.menu-categories {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 1rem;
+}
+
+.menu-category {
+    background: rgba(58, 51, 43, 0.8);
+    border-radius: 12px;
+    padding: 1rem;
+    text-align: center;
+    border: 1px solid var(--border);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.menu-category:hover {
+    background: rgba(212, 165, 116, 0.1);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow);
+}
+
+.menu-category-icon {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+.menu-category-name {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--text-secondary);
+}
+
+.menu-category-count {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    margin-top: 0.2rem;
+}
+
+/* Enlaces Principales - Ultra Modernos */
+.main-links-section {
+    margin-bottom: 3rem;
+}
+
+.main-link {
+    display: block;
+    background: var(--surface-glass);
+    color: var(--text-primary);
+    text-decoration: none;
+    padding: 1.5rem;
+    border-radius: 20px;
+    margin-bottom: 1.25rem;
+    border: 1px solid var(--border);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    position: relative;
+    overflow: hidden;
+    backdrop-filter: var(--blur-backdrop);
+    -webkit-backdrop-filter: var(--blur-backdrop);
+    animation: slideInUp 0.6s ease-out;
+}
+
+.main-link::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: var(--gradient-primary);
+    opacity: 0;
+    transition: all 0.4s ease;
+    z-index: 0;
+}
+
+.main-link::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: var(--gradient-glass);
+    opacity: 0.2;
+    z-index: 0;
+}
+
+.main-link:hover::before {
+    left: 0;
+    opacity: 0.15;
+}
+
+.main-link:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: var(--shadow-float);
+    border-color: var(--primary-color);
+}
+
+.main-link:hover .main-link-icon {
+    transform: scale(1.1) rotate(5deg);
+    box-shadow: var(--shadow-glow);
+}
+
+.main-link-content {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+}
+
+.main-link-icon {
+    font-size: 1.8rem;
+    width: 60px;
+    height: 60px;
+    background: var(--gradient-primary);
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    transition: all 0.3s ease;
+    box-shadow: var(--shadow-primary);
+}
+
+.main-link-text {
+    flex: 1;
+}
+
+.main-link-title {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 0.3rem;
+    color: var(--text-primary);
+    letter-spacing: -0.01em;
+}
+
+.main-link-subtitle {
+    font-size: 0.95rem;
+    color: var(--text-muted);
+    font-weight: 400;
+    line-height: 1.3;
+}
+
+/* Información de Contacto */
+.contact-section {
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background: rgba(42, 36, 31, 0.6);
+    border-radius: 15px;
+    border: 1px solid var(--border);
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    padding: 0.75rem;
+    background: rgba(58, 51, 43, 0.5);
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.contact-item:hover {
+    background: rgba(212, 165, 116, 0.1);
+}
+
+.contact-item:last-child {
+    margin-bottom: 0;
+}
+
+.contact-icon {
+    font-size: 1.2rem;
+    width: 40px;
+    height: 40px;
+    background: var(--gradient);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+/* Redes Sociales */
+.social-section {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.social-link {
+    width: 50px;
+    height: 50px;
+    background: rgba(42, 36, 31, 0.8);
+    border: 1px solid var(--border);
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-secondary);
+    text-decoration: none;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+}
+
+.social-link:hover {
+    background: var(--gradient);
+    transform: translateY(-3px);
+    box-shadow: var(--shadow);
+    color: white;
+}
+
+.social-link svg {
+    width: 24px;
+    height: 24px;
+}
+
+/* Sección de Administración - Ultra Moderna */
+.admin-section {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.admin-btn {
+    background: var(--gradient-primary);
+    color: white;
+    border: none;
+    padding: 1.25rem 2rem;
+    border-radius: 20px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    box-shadow: var(--shadow-primary);
+    position: relative;
+    overflow: hidden;
+    letter-spacing: -0.01em;
+}
+
+.admin-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: var(--gradient-accent);
+    transition: all 0.4s ease;
+    z-index: 0;
+}
+
+.admin-btn:hover::before {
+    left: 0;
+}
+
+.admin-btn:hover {
+    transform: translateY(-4px) scale(1.02);
+    box-shadow: var(--shadow-float);
+}
+
+.admin-btn span {
+    position: relative;
+    z-index: 1;
+}
+
+.utility-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.utility-btn {
+    background: var(--surface-glass);
+    color: var(--text-secondary);
+    border: 1px solid var(--border);
+    padding: 1rem 1.25rem;
+    border-radius: 16px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    backdrop-filter: var(--blur-backdrop);
+    -webkit-backdrop-filter: var(--blur-backdrop);
+    min-width: 90px;
+    position: relative;
+    overflow: hidden;
+}
+
+.utility-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: var(--gradient-secondary);
+    opacity: 0.8;
+    transition: all 0.3s ease;
+    z-index: 0;
+}
+
+.utility-btn:hover::before {
+    left: 0;
+}
+
+.utility-btn:hover {
+    color: white;
+    border-color: var(--secondary-color);
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: var(--shadow-secondary);
+}
+
+.utility-btn span {
+    position: relative;
+    z-index: 1;
+}
+
+/* Panel de Administración - UX Optimizado */
+.admin-panel {
+    position: fixed;
+    inset: 0;
+    z-index: 1000;
+    display: none;
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    opacity: 0;
+    transition: opacity 0.25s ease-out;
+}
+
+.admin-panel.active {
+    display: block;
+    opacity: 1;
+}
+
+.admin-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: var(--background);
+    border-radius: 24px 24px 0 0;
+    box-shadow: 0 -10px 40px rgba(0, 0, 0, 0.3);
+    transform: translateY(100%);
+    transition: transform 0.35s cubic-bezier(0.2, 0, 0, 1);
+    max-height: 90vh;
+    overflow: hidden;
+    border-top: 1px solid var(--border-bright);
+}
+
+.admin-panel.active .admin-content {
+    transform: translateY(0);
+}
+
+/* Handle para arrastrar - más prominente */
+.admin-drag-handle {
+    width: 100%;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: grab;
+    flex-shrink: 0;
+    background: var(--surface);
+    border-radius: 24px 24px 0 0;
+}
+
+.admin-drag-handle::before {
+    content: '';
+    width: 48px;
+    height: 6px;
+    background: var(--text-muted);
+    border-radius: 3px;
+    opacity: 0.7;
+    transition: opacity 0.2s ease;
+}
+
+.admin-drag-handle:hover::before {
+    opacity: 1;
+}
+
+.admin-content-inner {
+    height: calc(90vh - 32px);
+    overflow-y: auto;
+    padding: 0 1.5rem 1.5rem 1.5rem;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.admin-content-inner::-webkit-scrollbar {
+    display: none;
+}
+
+.admin-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    padding: 1.5rem 0 1rem 0;
+    border-bottom: 1px solid var(--border);
+    position: sticky;
+    top: 0;
+    background: var(--background);
+    z-index: 10;
+}
+
+.admin-header h3 {
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-size: 1.6rem;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+}
+
+.close-btn {
+    background: var(--surface-glass);
+    color: var(--text-secondary);
+    border: 1px solid var(--border);
+    width: 44px;
+    height: 44px;
+    border-radius: 16px;
+    cursor: pointer;
+    font-size: 1.3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    backdrop-filter: var(--blur-backdrop);
+    position: relative;
+    overflow: hidden;
+}
+
+.close-btn::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: var(--gradient-accent);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.close-btn:hover::before {
+    opacity: 1;
+}
+
+.close-btn:hover {
+    color: white;
+    border-color: var(--warning-color);
+    transform: scale(1.05);
+    box-shadow: var(--shadow-primary);
+}
+
+.close-btn span {
+    position: relative;
+    z-index: 1;
+}
+
+/* Tabs de Administración - UX Optimizado */
+.admin-tabs {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 2rem;
+    padding: 0.375rem;
+    background: var(--surface);
+    border-radius: 16px;
+    border: 1px solid var(--border);
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.admin-tabs::-webkit-scrollbar {
+    display: none;
+}
+
+.tab-btn {
+    background: transparent;
+    color: var(--text-secondary);
+    border: none;
+    padding: 0.875rem 1rem;
+    border-radius: 12px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    flex-shrink: 0;
+    min-width: 85px;
+    min-height: 44px; /* Touch target mínimo iOS/Android */
+    position: relative;
+    overflow: hidden;
+    white-space: nowrap;
+    scroll-snap-align: start;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tab-btn::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: var(--gradient-primary);
+    opacity: 0;
+    transition: opacity 0.2s ease;
+    border-radius: 12px;
+}
+
+.tab-btn.active::before {
+    opacity: 1;
+}
+
+.tab-btn.active {
+    color: white;
+    box-shadow: 0 2px 8px rgba(255, 107, 107, 0.3);
+}
+
+.tab-btn:not(.active):hover::before {
+    opacity: 0.1;
+}
+
+.tab-btn span {
+    position: relative;
+    z-index: 1;
+    font-size: inherit;
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+/* Formularios */
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: var(--text-secondary);
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 0.75rem;
+    background: rgba(58, 51, 43, 0.8);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    color: var(--text-primary);
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(212, 165, 116, 0.1);
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+/* Botones */
+.btn-primary {
+    background: var(--gradient);
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 12px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: var(--shadow);
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.btn-primary:hover {
+    background: var(--gradient-hover);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-hover);
+}
+
+.btn-secondary {
+    background: rgba(42, 36, 31, 0.8);
+    color: var(--text-secondary);
+    border: 1px solid var(--border);
+    padding: 0.75rem 1.5rem;
+    border-radius: 12px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.btn-secondary:hover {
+    background: var(--surface-light);
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+}
+
+.admin-buttons {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+}
+
+/* Listas de Items */
+.menu-list,
+.links-list {
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--border);
+}
+
+.menu-list h5,
+.links-list h5 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    font-size: 1rem;
+}
+
+.menu-item,
+.link-item {
+    background: rgba(58, 51, 43, 0.6);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 1rem;
+    margin-bottom: 0.75rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.item-info {
+    flex: 1;
+}
+
+.item-title {
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 0.2rem;
+}
+
+.item-subtitle {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+}
+
+.item-price {
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-left: 1rem;
+}
+
+.delete-btn {
+    background: rgba(255, 107, 53, 0.2);
+    color: var(--warning-color);
+    border: 1px solid var(--warning-color);
+    width: 35px;
+    height: 35px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    margin-left: 1rem;
+}
+
+.delete-btn:hover {
+    background: var(--warning-color);
+    color: white;
+}
+
+/* Estadísticas de Reservas */
+.reservations-summary {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.reservation-stat {
+    background: rgba(58, 51, 43, 0.6);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.stat-number {
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.stat-label {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+}
+
+.recent-reservations {
+    margin-bottom: 2rem;
+}
+
+.recent-reservations h5 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.reservation-item {
+    background: rgba(58, 51, 43, 0.6);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 1rem;
+    margin-bottom: 0.75rem;
+}
+
+.reservation-name {
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+.reservation-details {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    margin-top: 0.2rem;
+}
+
+/* Responsive Design - UX Optimizado */
+@media (max-width: 480px) {
+    .container {
+        padding: 1rem 0.75rem;
+    }
+
+    .restaurant-name {
+        font-size: 2rem;
+    }
+
+    .menu-categories {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.75rem;
+    }
+
+    /* Bottom Sheet móvil optimizado */
+    .admin-content {
+        max-height: 92vh;
+        border-radius: 20px 20px 0 0;
+    }
+
+    .admin-content-inner {
+        padding: 0 1rem 1rem 1rem;
+        height: calc(92vh - 32px);
+    }
+
+    .admin-header {
+        padding: 1rem 0 0.75rem 0;
+        margin-bottom: 1rem;
+    }
+
+    .admin-header h3 {
+        font-size: 1.3rem;
+    }
+
+    .close-btn {
+        width: 40px;
+        height: 40px;
+        font-size: 1.1rem;
+    }
+
+    /* Tabs móvil - mejores touch targets */
+    .admin-tabs {
+        margin-bottom: 1.5rem;
+        padding: 0.25rem;
+        gap: 0.25rem;
+    }
+
+    .tab-btn {
+        padding: 0.75rem 0.5rem;
+        font-size: 0.75rem;
+        min-width: 75px;
+        min-height: 42px;
+    }
+
+    /* Formularios móvil */
+    .form-group {
+        margin-bottom: 1.25rem;
+    }
+
+    .form-group label {
+        font-size: 0.85rem;
+        margin-bottom: 0.375rem;
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+        padding: 0.875rem;
+        font-size: 0.9rem;
+        border-radius: 12px;
+    }
+
+    .btn-primary {
+        padding: 0.875rem 1.25rem;
+        font-size: 0.9rem;
+        margin-bottom: 0.75rem;
+    }
+
+    .utility-buttons {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .utility-btn {
+        width: 100%;
+        padding: 0.875rem;
+        min-height: 44px;
+    }
+
+    .reservations-summary {
+        grid-template-columns: 1fr;
+        gap: 0.75rem;
+    }
+
+    .reservation-stat {
+        padding: 1.25rem;
+    }
+
+    .admin-buttons {
+        flex-direction: column;
+        gap: 0.5rem;
+        margin-top: 1.5rem;
+    }
+
+    .btn-secondary {
+        width: 100%;
+        margin: 0;
+        padding: 0.875rem;
+        min-height: 44px;
+    }
+
+    /* Listas móvil */
+    .menu-item,
+    .link-item,
+    .reservation-item {
+        padding: 0.875rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .delete-btn {
+        width: 32px;
+        height: 32px;
+        font-size: 0.9rem;
+    }
+}
+
+/* Tablets - mejor experiencia táctil */
+@media (min-width: 481px) and (max-width: 768px) {
+    .admin-content {
+        max-width: 90vw;
+        max-height: 85vh;
+        left: 5vw;
+        right: 5vw;
+        border-radius: 24px 24px 0 0;
+    }
+
+    .admin-content-inner {
+        padding: 0 1.5rem 1.5rem 1.5rem;
+        height: calc(85vh - 32px);
+    }
+
+    .admin-tabs {
+        justify-content: flex-start;
+        gap: 0.375rem;
+    }
+
+    .tab-btn {
+        min-width: 90px;
+        padding: 0.75rem 1rem;
+    }
+
+    .utility-buttons {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 0.75rem;
+    }
+
+    .utility-btn {
+        flex: 1;
+        min-width: 120px;
+    }
+
+    .admin-buttons {
+        flex-direction: row;
+        gap: 1rem;
+    }
+
+    .btn-secondary {
+        flex: 1;
+    }
+}
+
+/* Desktop - comportamiento como modal centrado */
+@media (min-width: 769px) {
+    .admin-panel {
+        align-items: center;
+        justify-content: center;
+        padding: 2rem;
+    }
+
+    .admin-content {
+        position: relative;
+        bottom: auto;
+        left: auto;
+        right: auto;
+        max-width: 800px;
+        max-height: 85vh;
+        width: 100%;
+        border-radius: 24px;
+        transform: scale(0.95);
+        opacity: 0;
+        transition: all 0.3s cubic-bezier(0.2, 0, 0, 1);
+    }
+
+    .admin-panel.active .admin-content {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    .admin-content-inner {
+        padding: 0 2rem 2rem 2rem;
+        height: auto;
+        max-height: calc(85vh - 32px);
+    }
+
+    .admin-drag-handle {
+        display: none; /* No necesario en desktop */
+    }
+
+    .admin-header {
+        padding: 2rem 0 1rem 0;
+    }
+
+    .admin-tabs {
+        justify-content: flex-start;
+        margin-bottom: 2rem;
+    }
+
+    .utility-buttons {
+        flex-direction: row;
+        gap: 1rem;
+    }
+
+    .utility-btn {
+        min-width: 120px;
+    }
+
+    .admin-buttons {
+        flex-direction: row;
+        gap: 1rem;
+        justify-content: flex-end;
+    }
+
+    .btn-secondary {
+        width: auto;
+        min-width: 140px;
+    }
+}
+
+/* Pantallas muy grandes */
+@media (min-width: 1200px) {
+    .admin-content {
+        max-width: 900px;
+    }
+}
+
+/* Altura mínima para evitar problemas */
+@media (max-height: 600px) {
+    .admin-content {
+        max-height: 95vh;
+    }
+
+    .admin-content-inner {
+        height: calc(95vh - 32px);
+    }
+
+    .admin-header {
+        padding: 0.75rem 0 0.5rem 0;
+        margin-bottom: 0.75rem;
+    }
+
+    .admin-tabs {
+        margin-bottom: 1rem;
+    }
+
+    .form-group {
+        margin-bottom: 1rem;
+    }
+}
+
+/* Landscape móvil */
+@media (max-width: 768px) and (orientation: landscape) and (max-height: 500px) {
+    .admin-content {
+        max-height: 98vh;
+        border-radius: 16px 16px 0 0;
+    }
+
+    .admin-content-inner {
+        height: calc(98vh - 28px);
+        padding: 0 1rem 0.75rem 1rem;
+    }
+
+    .admin-drag-handle {
+        height: 28px;
+    }
+
+    .admin-header {
+        padding: 0.5rem 0 0.375rem 0;
+        margin-bottom: 0.5rem;
+    }
+
+    .admin-header h3 {
+        font-size: 1.2rem;
+    }
+
+    .admin-tabs {
+        margin-bottom: 1rem;
+        padding: 0.25rem;
+    }
+
+    .tab-btn {
+        padding: 0.5rem 0.75rem;
+        min-height: 36px;
+        font-size: 0.8rem;
+    }
+}
+
+/* Animaciones Ultra Modernas */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px) scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes glow {
+    0% {
+        text-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    }
+    100% {
+        text-shadow: 0 4px 8px rgba(0, 0, 0, 0.3), 0 0 20px rgba(255, 107, 107, 0.3);
+    }
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.05);
+        opacity: 0.8;
+    }
+}
+
+@keyframes shimmer {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+.main-link,
+.menu-category,
+.contact-item {
+    animation: slideInUp 0.6s ease forwards;
+}
+
+.main-link:nth-child(1) { animation-delay: 0.1s; }
+.main-link:nth-child(2) { animation-delay: 0.2s; }
+.main-link:nth-child(3) { animation-delay: 0.3s; }
+.main-link:nth-child(4) { animation-delay: 0.4s; }
+
+.menu-category:nth-child(1) { animation-delay: 0.1s; }
+.menu-category:nth-child(2) { animation-delay: 0.2s; }
+.menu-category:nth-child(3) { animation-delay: 0.3s; }
+.menu-category:nth-child(4) { animation-delay: 0.4s; }
+
+/* Estados de carga y micro-interacciones */
+.loading {
+    opacity: 0.6;
+    pointer-events: none;
+    animation: pulse 1.5s ease-in-out infinite;
+}
+
+.success {
+    border-color: var(--success-color) !important;
+    box-shadow: 0 0 0 3px rgba(150, 206, 180, 0.3) !important;
+    animation: pulse 0.6s ease-out;
+}
+
+.error {
+    border-color: var(--primary-color) !important;
+    box-shadow: 0 0 0 3px rgba(255, 107, 107, 0.3) !important;
+    animation: shake 0.6s ease-out;
+}
+
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    75% { transform: translateX(5px); }
+}
+
+/* Elementos flotantes decorativos */
+.floating-elements {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.floating-element {
+    position: absolute;
+    opacity: 0.1;
+    animation: floatAround 20s ease-in-out infinite;
+}
+
+.floating-element:nth-child(1) {
+    top: 10%;
+    left: 10%;
+    animation-delay: 0s;
+    animation-duration: 25s;
+}
+
+.floating-element:nth-child(2) {
+    top: 60%;
+    right: 10%;
+    animation-delay: -5s;
+    animation-duration: 30s;
+}
+
+.floating-element:nth-child(3) {
+    bottom: 20%;
+    left: 20%;
+    animation-delay: -10s;
+    animation-duration: 22s;
+}
+
+@keyframes floatAround {
+    0%, 100% {
+        transform: translate(0, 0) rotate(0deg);
+    }
+    25% {
+        transform: translate(20px, -20px) rotate(90deg);
+    }
+    50% {
+        transform: translate(-10px, 30px) rotate(180deg);
+    }
+    75% {
+        transform: translate(30px, 10px) rotate(270deg);
+    }
+}
+
+/* Efectos de hover mejorados */
+.menu-category:hover {
+    animation: pulse 0.6s ease-out;
+}
+
+.contact-item:hover {
+    animation: shimmerEffect 0.8s ease-out;
+}
+
+@keyframes shimmerEffect {
+    0% { background-position: -100px; }
+    100% { background-position: 200px; }
+}
+
+/* Interacciones táctiles mejoradas */
+@media (hover: none) and (pointer: coarse) {
+    .main-link:active {
+        transform: scale(0.98);
+        transition: transform 0.1s ease;
+    }
+
+    .admin-btn:active {
+        transform: scale(0.95);
+        transition: transform 0.1s ease;
+    }
+
+    .utility-btn:active {
+        transform: scale(0.95);
+        transition: transform 0.1s ease;
+    }
+}
+
+/* Efectos de gradiente avanzados */
+.gradient-border {
+    position: relative;
+    background: var(--surface-glass);
+    backdrop-filter: var(--blur-backdrop);
+}
+
+.gradient-border::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    padding: 2px;
+    background: var(--gradient-primary);
+    border-radius: inherit;
+    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    mask-composite: xor;
+    -webkit-mask-composite: xor;
+}
+
+.shimmer-effect {
+    position: relative;
+    overflow: hidden;
+}
+
+.shimmer-effect::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(255, 255, 255, 0.2),
+        transparent
+    );
+    animation: shimmer 2s infinite;
+}
+
+@keyframes shimmer {
+    0% {
+        left: -100%;
+    }
+    100% {
+        left: 100%;
+    }
+}
+
+/* Efectos de partículas */
+.particle-effect {
+    position: relative;
+    overflow: hidden;
+}
+
+.particle-effect::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image:
+        radial-gradient(circle at 25% 25%, rgba(255, 107, 107, 0.3) 1px, transparent 1px),
+        radial-gradient(circle at 75% 75%, rgba(78, 205, 196, 0.3) 1px, transparent 1px),
+        radial-gradient(circle at 50% 50%, rgba(69, 183, 209, 0.3) 1px, transparent 1px);
+    background-size: 50px 50px, 75px 75px, 100px 100px;
+    animation: moveParticles 20s linear infinite;
+    opacity: 0.3;
+    pointer-events: none;
+}
+
+@keyframes moveParticles {
+    0% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(-50px, -50px);
+    }
+}
+
+/* Tema claro ultra moderno */
+[data-theme="light"] {
+    --background: #FAFAFA;
+    --surface: #FFFFFF;
+    --surface-light: #F5F5F5;
+    --surface-glass: rgba(255, 255, 255, 0.8);
+    --text-primary: #1A1A1A;
+    --text-secondary: #4A4A4A;
+    --text-muted: #9E9E9E;
+    --border: rgba(0, 0, 0, 0.1);
+    --border-bright: rgba(0, 0, 0, 0.2);
+}
+
+[data-theme="light"] body {
+    background-image:
+        radial-gradient(circle at 30% 40%, rgba(255, 107, 107, 0.1) 0%, transparent 50%),
+        radial-gradient(circle at 80% 10%, rgba(78, 205, 196, 0.1) 0%, transparent 50%),
+        radial-gradient(circle at 40% 80%, rgba(69, 183, 209, 0.1) 0%, transparent 50%);
+}
+
+[data-theme="light"] body::before {
+    background:
+        radial-gradient(circle at 20% 50%, rgba(255, 107, 107, 0.05) 0%, transparent 60%),
+        radial-gradient(circle at 80% 20%, rgba(78, 205, 196, 0.08) 0%, transparent 60%),
+        radial-gradient(circle at 40% 80%, rgba(69, 183, 209, 0.05) 0%, transparent 60%);
+}
+
+/* Efectos especiales para elementos específicos */
+.restaurant-header {
+    position: relative;
+}
+
+.restaurant-header.particle-effect::before {
+    opacity: 0.1;
+}
+
+.main-link.shimmer-effect:hover::after {
+    animation: shimmer 1s ease-out;
+}
+
+/* Gradientes de malla dinámicos */
+@keyframes meshRotate {
+    0% {
+        background-position: 0% 0%;
+    }
+    50% {
+        background-position: 100% 100%;
+    }
+    100% {
+        background-position: 0% 0%;
+    }
+}
+
+.dynamic-mesh {
+    background:
+        linear-gradient(45deg, transparent 30%, rgba(255, 107, 107, 0.05) 50%, transparent 70%),
+        linear-gradient(-45deg, transparent 30%, rgba(78, 205, 196, 0.05) 50%, transparent 70%),
+        linear-gradient(90deg, transparent 30%, rgba(69, 183, 209, 0.05) 50%, transparent 70%);
+    background-size: 200% 200%, 150% 150%, 300% 300%;
+    animation: meshRotate 15s ease-in-out infinite;
+}
