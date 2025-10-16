@@ -1,37 +1,37 @@
-/* Variables CSS - Paleta Restaurante Ultra Moderna */
+/* Variables CSS - Paleta Restaurante Japonés de Autor */
 :root {
-    --primary-color: #FF6B6B;        /* Coral Vibrante - Pasión Culinaria */
-    --primary-dark: #EE5A52;
-    --secondary-color: #4ECDC4;      /* Turquesa Fresco - Frescura */
-    --accent-color: #45B7D1;         /* Azul Cielo - Elegancia */
-    --warning-color: #FFE66D;        /* Amarillo Brillante - Energía */
-    --success-color: #96CEB4;        /* Verde Menta - Armonía */
-    --background: #0A0A0A;           /* Negro Profundo Ultra Moderno */
-    --surface: #1A1A1A;
-    --surface-light: #2A2A2A;
+    --primary-color: #C53030;        /* Rojo Tradicional Japonés - Aka */
+    --primary-dark: #9B2C2C;
+    --secondary-color: #D69E2E;      /* Dorado Imperial - Kin */
+    --accent-color: #2D3748;         /* Carbón Profundo - Sumi */
+    --warning-color: #ED8936;        /* Naranja Cálido - Daidai */
+    --success-color: #38A169;        /* Verde Bambú - Midori */
+    --background: #1A202C;           /* Negro Zen Profundo */
+    --surface: #2D3748;
+    --surface-light: #4A5568;
     --surface-glass: rgba(255, 255, 255, 0.05);
-    --text-primary: #FFFFFF;
-    --text-secondary: #E8E8E8;
-    --text-muted: #B0B0B0;
+    --text-primary: #F7FAFC;
+    --text-secondary: #E2E8F0;
+    --text-muted: #A0AEC0;
     --border: rgba(255, 255, 255, 0.1);
-    --border-bright: rgba(255, 255, 255, 0.2);
+    --border-bright: rgba(214, 158, 46, 0.3);
 
-    /* Gradientes Ultra Modernos */
-    --gradient-primary: linear-gradient(135deg, #FF6B6B 0%, #4ECDC4 50%, #45B7D1 100%);
-    --gradient-secondary: linear-gradient(135deg, #4ECDC4 0%, #96CEB4 100%);
-    --gradient-accent: linear-gradient(135deg, #FFE66D 0%, #FF6B6B 100%);
-    --gradient-glass: linear-gradient(135deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.05) 100%);
-    --gradient-mesh: radial-gradient(circle at 30% 40%, rgba(255, 107, 107, 0.3) 0%, transparent 50%),
-                     radial-gradient(circle at 80% 10%, rgba(78, 205, 196, 0.3) 0%, transparent 50%),
-                     radial-gradient(circle at 40% 80%, rgba(69, 183, 209, 0.2) 0%, transparent 50%);
+    /* Gradientes Japoneses Elegantes */
+    --gradient-primary: linear-gradient(135deg, #C53030 0%, #D69E2E 50%, #2D3748 100%);
+    --gradient-secondary: linear-gradient(135deg, #D69E2E 0%, #38A169 100%);
+    --gradient-accent: linear-gradient(135deg, #ED8936 0%, #C53030 100%);
+    --gradient-glass: linear-gradient(135deg, rgba(214, 158, 46, 0.1) 0%, rgba(197, 48, 48, 0.05) 100%);
+    --gradient-mesh: radial-gradient(circle at 30% 40%, rgba(197, 48, 48, 0.2) 0%, transparent 50%),
+                     radial-gradient(circle at 80% 10%, rgba(214, 158, 46, 0.25) 0%, transparent 50%),
+                     radial-gradient(circle at 40% 80%, rgba(45, 55, 72, 0.3) 0%, transparent 50%);
 
-    /* Sombras Ultra Modernas */
-    --shadow-primary: 0 20px 40px rgba(255, 107, 107, 0.4);
-    --shadow-secondary: 0 20px 40px rgba(78, 205, 196, 0.3);
-    --shadow-accent: 0 20px 40px rgba(69, 183, 209, 0.3);
-    --shadow-glass: 0 8px 32px rgba(0, 0, 0, 0.37);
-    --shadow-glow: 0 0 20px rgba(255, 107, 107, 0.3);
-    --shadow-float: 0 30px 60px rgba(0, 0, 0, 0.5);
+    /* Sombras Japonesas Elegantes */
+    --shadow-primary: 0 20px 40px rgba(197, 48, 48, 0.25);
+    --shadow-secondary: 0 20px 40px rgba(214, 158, 46, 0.2);
+    --shadow-accent: 0 20px 40px rgba(45, 55, 72, 0.3);
+    --shadow-glass: 0 8px 32px rgba(0, 0, 0, 0.4);
+    --shadow-glow: 0 0 20px rgba(214, 158, 46, 0.3);
+    --shadow-float: 0 30px 60px rgba(0, 0, 0, 0.6);
 
     /* Efectos Especiales */
     --blur-glass: blur(10px);
@@ -46,7 +46,7 @@
 }
 
 body {
-    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    font-family: 'Noto Sans JP', 'Hiragino Sans', 'Yu Gothic', 'Meiryo', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     background: var(--background);
     color: var(--text-primary);
     line-height: 1.6;
@@ -64,18 +64,657 @@ body::before {
     width: 100%;
     height: 100%;
     background:
-        radial-gradient(circle at 20% 50%, rgba(255, 107, 107, 0.1) 0%, transparent 60%),
-        radial-gradient(circle at 80% 20%, rgba(78, 205, 196, 0.15) 0%, transparent 60%),
-        radial-gradient(circle at 40% 80%, rgba(69, 183, 209, 0.1) 0%, transparent 60%);
+        radial-gradient(circle at 20% 50%, rgba(197, 48, 48, 0.08) 0%, transparent 60%),
+        radial-gradient(circle at 80% 20%, rgba(214, 158, 46, 0.12) 0%, transparent 60%),
+        radial-gradient(circle at 40% 80%, rgba(45, 55, 72, 0.15) 0%, transparent 60%);
     pointer-events: none;
     z-index: -1;
 }
 
+/* ===== MOBILE-FIRST LAYOUT ===== */
+
+/* Mobile Header Fijo */
+.mobile-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: var(--surface-glass);
+    backdrop-filter: var(--blur-backdrop);
+    -webkit-backdrop-filter: var(--blur-backdrop);
+    border-bottom: 1px solid var(--border-bright);
+    padding: 1rem;
+    z-index: 1000;
+    box-shadow: var(--shadow-glass);
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+}
+
+.logo-section {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.mobile-logo {
+    font-size: 1.75rem;
+    filter: drop-shadow(0 0 8px var(--secondary-color));
+}
+
+.mobile-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    background: var(--gradient-secondary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* Menu Toggle (Hamburguesa) */
+.menu-toggle {
+    background: none;
+    border: none;
+    width: 2.5rem;
+    height: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.25rem;
+    cursor: pointer;
+    border-radius: 8px;
+    padding: 0.5rem;
+    transition: all 0.3s ease;
+}
+
+.menu-toggle span {
+    width: 1.5rem;
+    height: 2px;
+    background: var(--text-primary);
+    border-radius: 1px;
+    transition: all 0.3s ease;
+}
+
+.menu-toggle:hover {
+    background: var(--surface-light);
+}
+
+/* Quick Actions */
+.quick-actions {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--border);
+}
+
+.quick-btn {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background: var(--gradient-primary);
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.25rem;
+    text-decoration: none;
+    box-shadow: var(--shadow-primary);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.quick-btn:hover, .quick-btn:active {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-float);
+}
+
+/* Mobile Menu Overlay */
+.mobile-menu-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.9);
+    backdrop-filter: var(--blur-backdrop);
+    z-index: 2000;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+}
+
+.mobile-menu-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.mobile-menu-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: var(--surface);
+    border-radius: 24px;
+    padding: 2rem;
+    width: 90%;
+    max-width: 320px;
+    box-shadow: var(--shadow-float);
+    border: 1px solid var(--border-bright);
+}
+
+.mobile-menu-header {
+    text-align: center;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.mobile-menu-header h2 {
+    font-size: 1.75rem;
+    margin-bottom: 0.5rem;
+    color: var(--secondary-color);
+}
+
+.close-mobile-menu {
+    position: absolute;
+    top: -1rem;
+    right: -1rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    background: var(--accent-color);
+    border: none;
+    color: var(--text-primary);
+    cursor: pointer;
+    font-size: 1.25rem;
+    transition: all 0.3s ease;
+}
+
+.close-mobile-menu:hover {
+    background: var(--primary-color);
+    transform: rotate(90deg);
+}
+
+.mobile-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.mobile-nav a {
+    padding: 1rem;
+    text-decoration: none;
+    color: var(--text-primary);
+    background: var(--surface-glass);
+    border-radius: 12px;
+    text-align: center;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    border: 1px solid var(--border);
+}
+
+.mobile-nav a:hover {
+    background: var(--gradient-accent);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-secondary);
+}
+
+/* Container Principal */
 .container {
     max-width: 480px;
     margin: 0 auto;
-    padding: 2rem 1rem;
+    padding: 7rem 1rem 2rem; /* Top padding para header fijo */
     position: relative;
+}
+
+/* Hero Section Mobile - OCULTO en mobile */
+.hero-section {
+    display: none; /* Oculto en mobile por redundancia con header */
+    text-align: center;
+    margin-bottom: 3rem;
+    padding: 2rem 1.5rem;
+    background: var(--surface-glass);
+    border-radius: 24px;
+    backdrop-filter: var(--blur-backdrop);
+    -webkit-backdrop-filter: var(--blur-backdrop);
+    box-shadow: var(--shadow-glass);
+    border: 1px solid var(--border-bright);
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-logo {
+    margin-bottom: 1rem;
+}
+
+.hero-logo .logo-emoji {
+    font-size: 3rem;
+    filter: drop-shadow(0 0 12px var(--secondary-color));
+    animation: float 3s ease-in-out infinite;
+}
+
+.hero-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    background: var(--gradient-secondary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.hero-subtitle {
+    font-size: 1.25rem;
+    color: var(--secondary-color);
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+.hero-description {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    opacity: 0.9;
+}
+
+/* Section Headers */
+.section-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.section-header h2 {
+    font-size: 1.75rem;
+    margin-bottom: 0.5rem;
+    color: var(--secondary-color);
+}
+
+.section-header p {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+}
+
+/* Sections con espaciado mobile */
+.menu-section {
+    margin-bottom: 3rem;
+    padding-top: 1.5rem; /* Espaciado superior para primera sección tras header */
+}
+
+.menu-section .section-header {
+    margin-bottom: 2rem; /* Asegurar espaciado del título */
+}
+
+.links-section,
+.contact-section {
+    margin-bottom: 3rem;
+}
+
+/* ===== CONTACT CARDS MOBILE-OPTIMIZED ===== */
+.contact-cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.contact-card {
+    display: flex;
+    align-items: center;
+    padding: 1.25rem;
+    background: var(--surface-glass);
+    border-radius: 16px;
+    border: 1px solid var(--border);
+    text-decoration: none;
+    color: var(--text-primary);
+    transition: all 0.3s ease;
+    backdrop-filter: var(--blur-glass);
+    -webkit-backdrop-filter: var(--blur-glass);
+    box-shadow: var(--shadow-glass);
+    cursor: pointer;
+}
+
+.contact-card:hover, .contact-card:active {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-secondary);
+    border-color: var(--border-bright);
+    background: var(--gradient-glass);
+}
+
+.contact-card .contact-icon {
+    font-size: 1.5rem;
+    margin-right: 1rem;
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    background: var(--gradient-accent);
+    box-shadow: var(--shadow-primary);
+    flex-shrink: 0;
+}
+
+.contact-card .contact-info h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+    color: var(--secondary-color);
+}
+
+.contact-card .contact-info p {
+    font-size: 0.875rem;
+    color: var(--text-muted);
+    margin: 0;
+}
+
+/* Specific contact card styles */
+.call-card:hover .contact-icon {
+    background: var(--gradient-primary);
+    animation: pulse 0.6s ease;
+}
+
+.whatsapp-card:hover .contact-icon {
+    background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
+}
+
+.location-card:hover .contact-icon {
+    background: var(--gradient-secondary);
+}
+
+.hours-card {
+    cursor: default;
+}
+
+.hours-card:hover {
+    transform: none;
+}
+
+/* Social Links Mobile */
+.social-section h3 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: var(--secondary-color);
+    font-size: 1.25rem;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.social-link {
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 50%;
+    background: var(--gradient-primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: var(--shadow-primary);
+    border: 1px solid var(--border-bright);
+}
+
+.social-link svg {
+    width: 1.5rem;
+    height: 1.5rem;
+    fill: var(--text-primary);
+}
+
+.social-link:hover {
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: var(--shadow-float);
+}
+
+/* Admin Section Mobile */
+.admin-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background: var(--surface-glass);
+    border-radius: 16px;
+    margin-top: 2rem;
+    border: 1px solid var(--border);
+    backdrop-filter: var(--blur-glass);
+}
+
+.admin-btn {
+    padding: 0.75rem 1rem;
+    background: var(--gradient-accent);
+    border: none;
+    border-radius: 12px;
+    color: var(--text-primary);
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: var(--shadow-primary);
+}
+
+.admin-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-secondary);
+}
+
+.utility-buttons {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.utility-btn {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 8px;
+    background: var(--surface-light);
+    border: 1px solid var(--border);
+    color: var(--text-primary);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.utility-btn:hover {
+    background: var(--gradient-primary);
+    transform: translateY(-1px);
+}
+
+/* ===== DESKTOP RESPONSIVE ===== */
+@media (min-width: 768px) {
+    /* Container más ancho en desktop */
+    .container {
+        max-width: 800px;
+        padding: 7rem 2rem 2rem;
+    }
+
+    /* Header mobile se convierte en sidebar en desktop */
+    .mobile-header {
+        width: 280px;
+        height: 100vh;
+        border-right: 1px solid var(--border-bright);
+        border-bottom: none;
+        flex-direction: column;
+        padding: 2rem 1.5rem;
+    }
+
+    .header-content {
+        flex-direction: column;
+        gap: 1.5rem;
+        margin-bottom: 2rem;
+    }
+
+    .logo-section {
+        flex-direction: column;
+        text-align: center;
+        gap: 0.5rem;
+    }
+
+    .mobile-logo {
+        font-size: 2.5rem;
+    }
+
+    .mobile-title {
+        font-size: 1.75rem;
+    }
+
+    /* Esconder menu toggle en desktop */
+    .menu-toggle {
+        display: none;
+    }
+
+    /* Quick actions verticales en sidebar */
+    .quick-actions {
+        flex-direction: column;
+        border-top: none;
+        border-bottom: 1px solid var(--border);
+        padding-bottom: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    /* Menu móvil se convierte en nav permanente */
+    .mobile-menu-overlay {
+        position: static;
+        opacity: 1;
+        visibility: visible;
+        background: none;
+        backdrop-filter: none;
+    }
+
+    .mobile-menu-content {
+        position: static;
+        transform: none;
+        background: none;
+        border-radius: 0;
+        padding: 0;
+        width: 100%;
+        max-width: none;
+        box-shadow: none;
+        border: none;
+    }
+
+    .mobile-menu-header {
+        display: none;
+    }
+
+    .mobile-nav {
+        gap: 0.5rem;
+    }
+
+    .mobile-nav a {
+        padding: 0.75rem;
+        font-size: 0.9rem;
+    }
+
+    /* Container principal se ajusta por sidebar */
+    body {
+        padding-left: 280px;
+    }
+
+    .container {
+        padding-top: 2rem;
+    }
+
+    /* Hero section VISIBLE en desktop */
+    .hero-section {
+        display: block; /* Mostrar en desktop */
+        padding: 3rem 2rem;
+        margin-bottom: 4rem;
+    }
+
+    .hero-title {
+        font-size: 3rem;
+    }
+
+    /* Remover padding extra del menu en desktop */
+    .menu-section {
+        padding-top: 0;
+    }
+
+    .menu-section .section-header {
+        margin-bottom: 2rem; /* Mantener espaciado normal en desktop */
+    }
+
+    /* Contact cards en grid 2x2 */
+    .contact-cards {
+        grid-template-columns: 1fr 1fr;
+        gap: 1.5rem;
+    }
+
+    /* Social links más espaciados */
+    .social-links {
+        gap: 1.5rem;
+    }
+
+    .social-link {
+        width: 4rem;
+        height: 4rem;
+    }
+
+    .social-link svg {
+        width: 1.75rem;
+        height: 1.75rem;
+    }
+
+    /* Admin section más prominente */
+    .admin-section {
+        padding: 1.5rem;
+        margin-top: 3rem;
+    }
+
+    .admin-btn {
+        padding: 1rem 1.5rem;
+        font-size: 1rem;
+    }
+
+    .utility-buttons {
+        gap: 1rem;
+    }
+
+    .utility-btn {
+        width: 3rem;
+        height: 3rem;
+        font-size: 1.125rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    /* Desktop grande */
+    .container {
+        max-width: 1000px;
+    }
+
+    /* Contact cards en una sola fila */
+    .contact-cards {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    /* Hero más espectacular */
+    .hero-section {
+        padding: 4rem 3rem;
+    }
+
+    .hero-title {
+        font-size: 3.5rem;
+    }
+
+    .hero-logo .logo-emoji {
+        font-size: 4rem;
+    }
 }
 
 /* Header del Restaurante - Ultra Moderno */
@@ -113,7 +752,7 @@ body::before {
     left: -50%;
     width: 200%;
     height: 200%;
-    background: conic-gradient(from 0deg, transparent, rgba(255, 107, 107, 0.1), transparent, rgba(78, 205, 196, 0.1), transparent);
+    background: conic-gradient(from 0deg, transparent, rgba(197, 48, 48, 0.08), transparent, rgba(214, 158, 46, 0.1), transparent);
     animation: rotate 20s linear infinite;
     z-index: -1;
 }
@@ -125,7 +764,7 @@ body::before {
 
 .logo-emoji {
     font-size: 5rem;
-    filter: drop-shadow(0 8px 16px rgba(255, 107, 107, 0.3));
+    filter: drop-shadow(0 8px 16px rgba(214, 158, 46, 0.4));
     animation: float 3s ease-in-out infinite;
     display: inline-block;
 }
@@ -164,7 +803,7 @@ body::before {
 .quick-menu-section {
     margin-bottom: 2rem;
     padding: 1.5rem;
-    background: rgba(42, 36, 31, 0.6);
+    background: rgba(45, 55, 72, 0.6);
     border-radius: 15px;
     border: 1px solid var(--border);
 }
@@ -183,7 +822,7 @@ body::before {
 }
 
 .menu-category {
-    background: rgba(58, 51, 43, 0.8);
+    background: rgba(45, 55, 72, 0.8);
     border-radius: 12px;
     padding: 1rem;
     text-align: center;
@@ -193,9 +832,9 @@ body::before {
 }
 
 .menu-category:hover {
-    background: rgba(212, 165, 116, 0.1);
+    background: rgba(214, 158, 46, 0.15);
     transform: translateY(-2px);
-    box-shadow: var(--shadow);
+    box-shadow: var(--shadow-primary);
 }
 
 .menu-category-icon {
@@ -324,7 +963,7 @@ body::before {
 .contact-section {
     margin-bottom: 2rem;
     padding: 1.5rem;
-    background: rgba(42, 36, 31, 0.6);
+    background: rgba(45, 55, 72, 0.6);
     border-radius: 15px;
     border: 1px solid var(--border);
 }
@@ -335,13 +974,13 @@ body::before {
     gap: 1rem;
     margin-bottom: 1rem;
     padding: 0.75rem;
-    background: rgba(58, 51, 43, 0.5);
+    background: rgba(45, 55, 72, 0.5);
     border-radius: 10px;
     transition: all 0.3s ease;
 }
 
 .contact-item:hover {
-    background: rgba(212, 165, 116, 0.1);
+    background: rgba(214, 158, 46, 0.15);
 }
 
 .contact-item:last-child {
@@ -371,7 +1010,7 @@ body::before {
 .social-link {
     width: 50px;
     height: 50px;
-    background: rgba(42, 36, 31, 0.8);
+    background: rgba(45, 55, 72, 0.8);
     border: 1px solid var(--border);
     border-radius: 15px;
     display: flex;
@@ -384,9 +1023,9 @@ body::before {
 }
 
 .social-link:hover {
-    background: var(--gradient);
+    background: var(--gradient-primary);
     transform: translateY(-3px);
-    box-shadow: var(--shadow);
+    box-shadow: var(--shadow-primary);
     color: white;
 }
 
@@ -629,9 +1268,9 @@ body::before {
 
 .close-btn:hover {
     color: white;
-    border-color: var(--warning-color);
+    border-color: var(--secondary-color);
     transform: scale(1.05);
-    box-shadow: var(--shadow-primary);
+    box-shadow: var(--shadow-secondary);
 }
 
 .close-btn span {
@@ -696,7 +1335,7 @@ body::before {
 
 .tab-btn.active {
     color: white;
-    box-shadow: 0 2px 8px rgba(255, 107, 107, 0.3);
+    box-shadow: 0 2px 8px rgba(214, 158, 46, 0.4);
 }
 
 .tab-btn:not(.active):hover::before {
@@ -735,7 +1374,7 @@ body::before {
 .form-group textarea {
     width: 100%;
     padding: 0.75rem;
-    background: rgba(58, 51, 43, 0.8);
+    background: rgba(45, 55, 72, 0.8);
     border: 1px solid var(--border);
     border-radius: 10px;
     color: var(--text-primary);
@@ -747,8 +1386,8 @@ body::before {
 .form-group select:focus,
 .form-group textarea:focus {
     outline: none;
-    border-color: var(--primary-color);
-    box-shadow: 0 0 0 3px rgba(212, 165, 116, 0.1);
+    border-color: var(--secondary-color);
+    box-shadow: 0 0 0 3px rgba(214, 158, 46, 0.2);
 }
 
 .form-group textarea {
@@ -758,7 +1397,7 @@ body::before {
 
 /* Botones */
 .btn-primary {
-    background: var(--gradient);
+    background: var(--gradient-primary);
     color: white;
     border: none;
     padding: 0.75rem 1.5rem;
@@ -767,19 +1406,19 @@ body::before {
     font-weight: 600;
     cursor: pointer;
     transition: all 0.3s ease;
-    box-shadow: var(--shadow);
+    box-shadow: var(--shadow-primary);
     width: 100%;
     margin-bottom: 1rem;
 }
 
 .btn-primary:hover {
-    background: var(--gradient-hover);
+    background: var(--gradient-accent);
     transform: translateY(-2px);
-    box-shadow: var(--shadow-hover);
+    box-shadow: var(--shadow-float);
 }
 
 .btn-secondary {
-    background: rgba(42, 36, 31, 0.8);
+    background: rgba(45, 55, 72, 0.8);
     color: var(--text-secondary);
     border: 1px solid var(--border);
     padding: 0.75rem 1.5rem;
@@ -793,8 +1432,8 @@ body::before {
 
 .btn-secondary:hover {
     background: var(--surface-light);
-    border-color: var(--primary-color);
-    color: var(--primary-color);
+    border-color: var(--secondary-color);
+    color: var(--secondary-color);
 }
 
 .admin-buttons {
@@ -814,14 +1453,14 @@ body::before {
 
 .menu-list h5,
 .links-list h5 {
-    color: var(--primary-color);
+    color: var(--secondary-color);
     margin-bottom: 1rem;
     font-size: 1rem;
 }
 
 .menu-item,
 .link-item {
-    background: rgba(58, 51, 43, 0.6);
+    background: rgba(45, 55, 72, 0.6);
     border: 1px solid var(--border);
     border-radius: 10px;
     padding: 1rem;
@@ -848,14 +1487,14 @@ body::before {
 
 .item-price {
     font-weight: 600;
-    color: var(--primary-color);
+    color: var(--secondary-color);
     margin-left: 1rem;
 }
 
 .delete-btn {
-    background: rgba(255, 107, 53, 0.2);
-    color: var(--warning-color);
-    border: 1px solid var(--warning-color);
+    background: rgba(197, 48, 48, 0.2);
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
     width: 35px;
     height: 35px;
     border-radius: 8px;
@@ -869,7 +1508,7 @@ body::before {
 }
 
 .delete-btn:hover {
-    background: var(--warning-color);
+    background: var(--primary-color);
     color: white;
 }
 
@@ -882,7 +1521,7 @@ body::before {
 }
 
 .reservation-stat {
-    background: rgba(58, 51, 43, 0.6);
+    background: rgba(45, 55, 72, 0.6);
     border: 1px solid var(--border);
     border-radius: 12px;
     padding: 1.5rem;
@@ -893,7 +1532,7 @@ body::before {
     display: block;
     font-size: 2rem;
     font-weight: 700;
-    color: var(--primary-color);
+    color: var(--secondary-color);
     margin-bottom: 0.5rem;
 }
 
@@ -907,12 +1546,12 @@ body::before {
 }
 
 .recent-reservations h5 {
-    color: var(--primary-color);
+    color: var(--secondary-color);
     margin-bottom: 1rem;
 }
 
 .reservation-item {
-    background: rgba(58, 51, 43, 0.6);
+    background: rgba(45, 55, 72, 0.6);
     border: 1px solid var(--border);
     border-radius: 10px;
     padding: 1rem;
@@ -1284,7 +1923,7 @@ body::before {
         text-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     }
     100% {
-        text-shadow: 0 4px 8px rgba(0, 0, 0, 0.3), 0 0 20px rgba(255, 107, 107, 0.3);
+        text-shadow: 0 4px 8px rgba(0, 0, 0, 0.3), 0 0 20px rgba(214, 158, 46, 0.4);
     }
 }
 
@@ -1333,13 +1972,13 @@ body::before {
 
 .success {
     border-color: var(--success-color) !important;
-    box-shadow: 0 0 0 3px rgba(150, 206, 180, 0.3) !important;
+    box-shadow: 0 0 0 3px rgba(56, 161, 105, 0.3) !important;
     animation: pulse 0.6s ease-out;
 }
 
 .error {
     border-color: var(--primary-color) !important;
-    box-shadow: 0 0 0 3px rgba(255, 107, 107, 0.3) !important;
+    box-shadow: 0 0 0 3px rgba(197, 48, 48, 0.3) !important;
     animation: shake 0.6s ease-out;
 }
 
@@ -1498,9 +2137,9 @@ body::before {
     right: 0;
     bottom: 0;
     background-image:
-        radial-gradient(circle at 25% 25%, rgba(255, 107, 107, 0.3) 1px, transparent 1px),
-        radial-gradient(circle at 75% 75%, rgba(78, 205, 196, 0.3) 1px, transparent 1px),
-        radial-gradient(circle at 50% 50%, rgba(69, 183, 209, 0.3) 1px, transparent 1px);
+        radial-gradient(circle at 25% 25%, rgba(197, 48, 48, 0.2) 1px, transparent 1px),
+        radial-gradient(circle at 75% 75%, rgba(214, 158, 46, 0.25) 1px, transparent 1px),
+        radial-gradient(circle at 50% 50%, rgba(45, 55, 72, 0.3) 1px, transparent 1px);
     background-size: 50px 50px, 75px 75px, 100px 100px;
     animation: moveParticles 20s linear infinite;
     opacity: 0.3;
@@ -1531,16 +2170,16 @@ body::before {
 
 [data-theme="light"] body {
     background-image:
-        radial-gradient(circle at 30% 40%, rgba(255, 107, 107, 0.1) 0%, transparent 50%),
-        radial-gradient(circle at 80% 10%, rgba(78, 205, 196, 0.1) 0%, transparent 50%),
-        radial-gradient(circle at 40% 80%, rgba(69, 183, 209, 0.1) 0%, transparent 50%);
+        radial-gradient(circle at 30% 40%, rgba(197, 48, 48, 0.08) 0%, transparent 50%),
+        radial-gradient(circle at 80% 10%, rgba(214, 158, 46, 0.1) 0%, transparent 50%),
+        radial-gradient(circle at 40% 80%, rgba(45, 55, 72, 0.08) 0%, transparent 50%);
 }
 
 [data-theme="light"] body::before {
     background:
-        radial-gradient(circle at 20% 50%, rgba(255, 107, 107, 0.05) 0%, transparent 60%),
-        radial-gradient(circle at 80% 20%, rgba(78, 205, 196, 0.08) 0%, transparent 60%),
-        radial-gradient(circle at 40% 80%, rgba(69, 183, 209, 0.05) 0%, transparent 60%);
+        radial-gradient(circle at 20% 50%, rgba(197, 48, 48, 0.04) 0%, transparent 60%),
+        radial-gradient(circle at 80% 20%, rgba(214, 158, 46, 0.06) 0%, transparent 60%),
+        radial-gradient(circle at 40% 80%, rgba(45, 55, 72, 0.04) 0%, transparent 60%);
 }
 
 /* Efectos especiales para elementos específicos */
@@ -1571,9 +2210,9 @@ body::before {
 
 .dynamic-mesh {
     background:
-        linear-gradient(45deg, transparent 30%, rgba(255, 107, 107, 0.05) 50%, transparent 70%),
-        linear-gradient(-45deg, transparent 30%, rgba(78, 205, 196, 0.05) 50%, transparent 70%),
-        linear-gradient(90deg, transparent 30%, rgba(69, 183, 209, 0.05) 50%, transparent 70%);
+        linear-gradient(45deg, transparent 30%, rgba(197, 48, 48, 0.04) 50%, transparent 70%),
+        linear-gradient(-45deg, transparent 30%, rgba(214, 158, 46, 0.05) 50%, transparent 70%),
+        linear-gradient(90deg, transparent 30%, rgba(45, 55, 72, 0.04) 50%, transparent 70%);
     background-size: 200% 200%, 150% 150%, 300% 300%;
     animation: meshRotate 15s ease-in-out infinite;
 }
